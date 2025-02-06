@@ -240,7 +240,8 @@ GameObject:
   - component: {fileID: 410167689}
   - component: {fileID: 410167688}
   - component: {fileID: 410167687}
-  m_Layer: 0
+  - component: {fileID: 410167691}
+  m_Layer: 6
   m_Name: Keypad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,6 +334,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &410167691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410167686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037ad42bd7f368a4bac65da2a008706b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: Use Keypad
 --- !u!1 &541239485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,6 +1329,22 @@ MonoBehaviour:
   cam: {fileID: 1441208716}
   xSensitivity: 30
   ySensitivity: 30
+--- !u!114 &1424987811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424987803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94eb6abcd7bec4c42802cf30ca11e42a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 3
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!20 &1441208716 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7878027242419862303, guid: d1b0f0722e93f0d47b8f956794714aae, type: 3}
@@ -1467,7 +1497,7 @@ Transform:
   m_GameObject: {fileID: 1513458220}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.092, y: 32.3, z: -0.014}
+  m_LocalPosition: {x: 0.101, y: 32.3, z: -0.014}
   m_LocalScale: {x: 0.0025000002, y: 6.61, z: 0.18}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1958,7 +1988,7 @@ Transform:
   m_GameObject: {fileID: 1846211348}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.27, y: 2.67, z: -1.38}
+  m_LocalPosition: {x: 0.64, y: 2.67, z: -1.38}
   m_LocalScale: {x: 0.0025, y: 2.87, z: 4.12}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2240,6 +2270,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3045735606444740994, guid: d1b0f0722e93f0d47b8f956794714aae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1424987810}
+    - targetCorrespondingSourceObject: {fileID: 3045735606444740994, guid: d1b0f0722e93f0d47b8f956794714aae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1424987811}
   m_SourcePrefab: {fileID: 100100000, guid: d1b0f0722e93f0d47b8f956794714aae, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
