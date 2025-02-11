@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     private PalyerInput playerInput; //Reference to PlayerInput class
-    private PalyerInput.OnFootActions onFoot;
+    public PalyerInput.OnFootActions onFoot;
 
     private PlayerMotor motor;
     private PlayerLook look;
